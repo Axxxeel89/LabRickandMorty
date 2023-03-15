@@ -5,10 +5,7 @@ import { LayoutComponent } from './website/pages/layout/layout.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent,
-    children:[
-
-    ]
+    loadChildren: ()=> import('./website/website.module').then(m => m.WebsiteModule)
   }
 ];
 

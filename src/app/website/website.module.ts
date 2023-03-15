@@ -11,6 +11,7 @@ import { CharactersComponent } from './pages/characters/characters.component';
 import { LocationsComponent } from './pages/locations/locations.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { LayoutComponent} from './pages/layout/layout.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -25,7 +26,10 @@ import { LayoutComponent} from './pages/layout/layout.component';
   ],
   imports: [
     CommonModule,
-    WebsiteRoutingModule
-  ]
+    WebsiteRoutingModule,
+    SharedModule
+  ],
+  providers: [],
+  bootstrap: [WebsiteModule]
 })
 export class WebsiteModule { }

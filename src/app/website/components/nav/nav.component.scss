@@ -1,0 +1,44 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+
+}
+
+.nav__img{
+  position: absolute;
+  top: 4px;
+  left: 70px;
+  width: 250px;
+}
+
+.nav__menu{
+ position: relative;
+ display: flex;
+ gap: 15px;
+}
+
+.nav__menu li{
+  list-style: none;
+ }
+
+ .nav__menu a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(2px 2px 2px black);
+  transition: .5s;
+ }
+
+ .nav__menu :hover{
+  text-decoration: none;
+  color: #18c4ca ;
+  // filter: drop-shadow(2px 2px 2px black);
+ }
+
+.color{
+  background:	#faf082 ;
+}

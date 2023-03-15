@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
+  Logo: string = 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg';
+
+
+
 }
