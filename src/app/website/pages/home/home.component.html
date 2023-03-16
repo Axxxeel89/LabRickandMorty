@@ -1,7 +1,18 @@
-<div class="container_cards">
-  <app-cards
-  [cards]="character"
-  *ngFor="let character of characters">
-  </app-cards>
-</div>
+<app-hero></app-hero>
+<section class="main__characters main">
+  <h1 class="main__character container">Collection Characters</h1>
+  <div class="container_cards">
+    <app-cards
+    [cards]="character"
+    *ngFor="let character of characters">
+    </app-cards>
+  </div>
+</section>
+<section  class="main__episodes containerT main">
+  <div class="main__imgEpisodes">
+    <button class="main__cta">Ir</button>
+  </div>
+</section>
+
+
 

@@ -3,3 +3,53 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.main{
+  width: 90%;;
+  margin: 20px auto;
+  margin-top: 80px;
+}
+
+.containerT{
+  height: 90vh;
+}
+
+.main__character{
+  font-size: 4rem;
+  font-weight: 600;
+  color: steelblue;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main__episodes{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.main__imgEpisodes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(112, 2, 255, 0.397)), url(../../../../assets/img/episodes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-attachment: fixed;
+}
+
+.main__cta{
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 10px orange;
+}
+

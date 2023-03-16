@@ -12,6 +12,8 @@ import { LocationsComponent } from './pages/locations/locations.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { LayoutComponent} from './pages/layout/layout.component';
 import { SharedModule } from '../shared/shared.module';
+import { HeroComponent } from './components/hero/hero.component';
+import { ListaComponent } from './components/lista/lista.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { SharedModule } from '../shared/shared.module';
     CharactersComponent,
     LocationsComponent,
     EpisodesComponent,
-    LayoutComponent
+    LayoutComponent,
+    HeroComponent,
+    ListaComponent
   ],
   imports: [
     CommonModule,

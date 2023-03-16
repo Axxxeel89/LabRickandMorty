@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ICharacter } from '../Models/ICharacter'
+import { ILocation } from '../Models/ILocation'
+import { IEpisodes } from '../Models/IEpisodes'
 
 
 @Injectable({
@@ -8,14 +10,24 @@ import { ICharacter } from '../Models/ICharacter'
 })
 export class ContentService {
 
-  private apiUrl = "https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7,8,9"
+  private apiUrlCharacters = "https://rickandmortyapi.com/api/character/";
+  private apiUrlEpisodes = "https://rickandmortyapi.com/api/episode/";
+
+  CantidadCharacter: string [] = []
+  CantidadEpisodes: string [] = []
 
   constructor(
-    private http:HttpClient
+    private http:HttpClient,
   ) { }
 
-  getCharacters(){
-    return this.http.get<ICharacter[]>(this.apiUrl)
+  getCharacters(CharImagenes: string []){
+    this.CantidadCharacter = CharImagenes;
+    return this.http.get<ICharacter[]>(this.apiUrlCharacters + '/' + this.CantidadCharacter)
+  }
+
+  getEpisodes(EpisoImagenes: string []){
+    this.CantidadEpisodes = EpisoImagenes;
+    return this.http.get<IEpisodes[]>(this.apiUrlEpisodes + this.CantidadEpisodes);
   }
 
 }

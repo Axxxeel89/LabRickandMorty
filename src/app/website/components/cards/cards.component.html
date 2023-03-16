@@ -1,12 +1,12 @@
-<mat-card class="example-card">
-  <mat-card-header>
-    <mat-card-title-group>
-      <mat-card-title>{{cards.name}}</mat-card-title>
-      <mat-card-subtitle>{{cards.species}}</mat-card-subtitle>
-      <img mat-card-md-image [src]="cards.image"  alt="Image of a Shiba Inu">
-    </mat-card-title-group>
-  </mat-card-header>
-  <mat-card-content>
+<div class="card">
+  <h1 class="card__title">{{cards.name}}</h1>
+  <figure class="card__picture">
+    <img class="card__img" [src]="cards.image" alt="">
+  </figure>
+  <div class="card__containertext">
+    <p class="card__paragraph"><b >Species:</b> {{cards.species}}</p>
+    <p class="card__paragraph"><b>Origin: </b> {{cards.origin.name}}</p>
+    <a class="card__cta" href="">Ver Detalle</a>
+  </div>
+</div>
 
-  </mat-card-content>
-</mat-card>
