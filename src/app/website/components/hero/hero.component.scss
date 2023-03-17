@@ -22,7 +22,7 @@
     text-align: center;
     color: #fff5f2;
     margin-bottom: 100px;
-    filter: drop-shadow(3px 3px 4px #b80101);
+    animation: 1.5s sombra1 infinite;
   }
 
   &__paragraph{
@@ -30,7 +30,53 @@
     font-size: 3.5rem;
     text-align: center;
     color: #e3e2ff;
-    filter: drop-shadow(3px 3px 6px rgb(0, 0, 255))
+    animation: 1.5s sombra2 infinite;
   }
 
+}
+
+@keyframes sombra1 {
+  to{
+    filter: drop-shadow(3px 3px 4px #b80101);
+  }
+
+  from{
+    filter: drop-shadow(3px 3px 10px #b80101);
+  }
+
+}
+
+@keyframes sombra2 {
+  to{
+    filter: drop-shadow(3px 3px 4px rgb(0, 0, 255));
+  }
+
+  from{
+    filter: drop-shadow(3px 3px 10px rgb(0, 0, 255));
+  }
+
+}
+
+
+@media screen and (max-width: 1000px){
+  .hero{
+
+    &__title{
+      font-size: 4rem;
+      text-align: center;
+      color: #fff5f2;
+      margin-bottom: 100px;
+      padding: 0 20px;
+      line-height: 70px;
+    }
+
+    &__paragraph{
+      font-size: 2.5rem;
+      text-align: center;
+      color: #e3e2ff;
+      padding: 0 20px;
+      line-height: 40px;
+    }
+
+  }
 }

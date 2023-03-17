@@ -14,6 +14,7 @@
   top: 4px;
   left: 70px;
   width: 250px;
+  filter: drop-shadow(3px 3px 5px #fff);
 }
 
 .nav__menu{
@@ -41,4 +42,54 @@
 
 .color{
   background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+
+@media screen and (max-width: 500px){
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+
+  }
+
+  .nav__img{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 110px;
+
+  }
+
+  .nav__menu{
+   position: relative;
+   display: flex;
+   gap: 4px;
+  }
+
+  .nav__menu li{
+    list-style: none;
+   }
+
+   .nav__menu a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 2px 2px black);
+    transition: .5s;
+   }
+
+   .nav__menu :hover{
+    text-decoration: none;
+    color: #18c4ca ;
+   }
+
+  .color{
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  }
+
 }

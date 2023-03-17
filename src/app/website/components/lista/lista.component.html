@@ -1,8 +1,8 @@
-<ul>
-  <li>{{Episodes.id}}</li>
-  <li>{{Episodes.name}}</li>
-  <li>{{Episodes.air_date}}</li>
-  <li>{{Episodes.episode}}</li>
-  <li>{{Episodes.url}}</li>
-  <li>{{Episodes.created}}</li>
-</ul>
+<div class="list">
+  <ul class="list__ul">
+    <li><b>Name Episode: &nbsp;</b>{{Episodes.name}}</li>
+    <li><b>Air date: &nbsp;</b>{{Episodes.air_date}}</li>
+    <li><b>Episode: &nbsp;</b>{{Episodes.episode}}</li>
+    <li><b>Created: &nbsp;</b>{{Episodes.created | date}}</li>
+  </ul>
+</div>

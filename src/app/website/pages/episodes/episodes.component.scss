@@ -1,0 +1,23 @@
+.episodes{
+  width: 92%;
+  min-height: 100vh;
+  margin: 100px auto;
+
+  &__title{
+    text-align: center;
+    font-size: 3.8rem;
+    margin-bottom: 60px;
+    font-weight: 600;
+    color: steelblue;
+  }
+
+  &__conatinerlist{
+    height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 80px;
+    box-shadow: 2px 2px 8px rgba($color: #ec0000, $alpha: 0.5);
+    border-radius: 10px;
+  }
+
+
+}

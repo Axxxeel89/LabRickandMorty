@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ICharacter } from '../Models/ICharacter'
-import { ILocation } from '../Models/ILocation'
 import { IEpisodes } from '../Models/IEpisodes'
 
 

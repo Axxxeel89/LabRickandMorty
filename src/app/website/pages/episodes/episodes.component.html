@@ -1,6 +1,6 @@
 <div class="episodes">
-  <h1>List Episodes</h1>
-
-  <app-lista [Episodes]="item" *ngFor="let item of episodes"></app-lista>
-
+  <h1 class="episodes__title">List Episodes</h1>
+  <div class="episodes__conatinerlist">
+    <app-lista [Episodes]="item" *ngFor="let item of episodes"></app-lista>
+  </div>
 </div>

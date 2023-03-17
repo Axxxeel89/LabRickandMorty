@@ -1,1 +1,9 @@
-<p>characters works!</p>
+<div class="characters">
+  <h1 class="characters__title">List of Characters</h1>
+  <div class="characters__containercards">
+    <app-cards [cards]="item" *ngFor="let item of characters"></app-cards>
+  </div>
+
+
+</div>
+

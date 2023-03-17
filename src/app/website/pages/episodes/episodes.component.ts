@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentService} from '../../../services/content.service';
-import {IEpisodes} from '../../../Models/IEpisodes'
+import {IEpisodes} from '../../../Models/IEpisodes';
+import {ICharacter} from 'src/app/Models/ICharacter';
+import { switchMap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-episodes',
@@ -21,7 +23,6 @@ export class EpisodesComponent implements OnInit {
     this.contentService.getEpisodes(this.someEpisodes)
     .subscribe(data => {
       this.episodes = data;
-      console.log(data)
     })
   }
 

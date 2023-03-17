@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ICharacter } from 'src/app/Models/ICharacter';
 import { ContentService } from '../../../services/content.service'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
