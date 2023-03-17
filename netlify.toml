@@ -1,5 +1,5 @@
 [build]
-  publish = "lab-rick-and-morty"
+  publish = "dist/lab-rick-and-morty"
   command = "npm run build"
 [[redirects]]
   from = "/*"
